@@ -5,12 +5,13 @@ import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 
 
+
 function NavbarComponent() {
   return (
     <>
       <Navbar bg="white" sticky="top" expand="sm" collapseOnSelect>
         <Navbar.Brand>
-          <img src={logo} alt="" className="logo-img"/>{" "}
+          <img src={logo} alt="" className="logo-img"/>
         </Navbar.Brand>
 
         <Navbar.Toggle />
