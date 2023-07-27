@@ -3,18 +3,21 @@ import logo from "../images/c4 nexus logo.png";
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 
+
+
 function NavbarComponent() {
   return (
     <>
       <Navbar bg="white" sticky="top" expand="sm" collapseOnSelect>
         <Navbar.Brand>
-          <img src={logo} />{" "}
+          <img src={logo} alt="" className="logo-img"/>{" "}
         </Navbar.Brand>
 
         <Navbar.Toggle />
-        <Navbar.Collapse>
+        
+        <Navbar.Collapse className="right-aligned">
           <Nav>
-            <NavDropdown title="Products">
+          <NavDropdown title="Products" className="navigation-link">
               <NavDropdown.Item href="#products/Promotions">
                 Promotions
               </NavDropdown.Item>
@@ -25,9 +28,9 @@ function NavbarComponent() {
               </NavDropdown.Item>
               <NavDropdown.Item href="#products/shoes">Shoes</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact-us">Contact Us</Nav.Link>
-            <Nav.Link href="#favourites">Favourites</Nav.Link>
+            <Nav.Link href="#about" className="navigation-link">About</Nav.Link>
+            <Nav.Link href="#contact-us" className="navigation-link">Contact Us</Nav.Link>
+            <Nav.Link href="#favourites" className="navigation-link">Favourites</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -36,4 +39,6 @@ function NavbarComponent() {
   );
 }
 
-export default NavbarComponent;
+export default  NavbarComponent;
+
+
