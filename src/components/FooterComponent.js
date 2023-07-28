@@ -13,25 +13,22 @@ function FooterComponent() {
               <ul className="list-unstyled">
                 <li>Sofia, Studentski Grad</li>
                 <li>Sofia, Mladost</li>
-                
               </ul>
             </div>
             {/* column 2 */}
             <div className="col-md-3 col-sm-6">
-              <h2>TEST1 TEST2</h2>
+              <h2>Contacts</h2>
               <ul className="list-unstyled">
-                <li><a href="/">TEST1 TEST2</a></li>
-                <li><a href="/">TEST1 TEST2</a></li>
-               
+                <li>+359 88420 6969</li>
+                <li>c4@nexus.com</li>
               </ul>
             </div>
             {/* column 3 */}
             <div className="col-md-3 col-sm-6">
-              <h2>TEST1 TEST2</h2>
+              <h2>Official Distributor</h2>
               <ul className="list-unstyled">
-                <li><a href="/">TEST1 TEST2</a></li>
-                <li><a href="/">TEST1 TEST2</a></li>
-               
+                <li>Adidas</li>
+                <li>Nike</li>
               </ul>
             </div>
           </div>
