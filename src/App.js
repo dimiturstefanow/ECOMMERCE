@@ -1,5 +1,6 @@
-import NavbarComponent from "./components/NavbarComponent";
-import FooterComponent from "./components/FooterComponent";
+import NavbarComponent from "./Navigation/NavbarComponent";
+import FooterComponent from "./Navigation/FooterComponent";
+import Products from "./Products/Products";
 import "./App.css";
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <div className="App">
     <NavbarComponent />
+    <Products />
     <FooterComponent />
     </div>
     </>
