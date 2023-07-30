@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/c4 nexus logo.png";
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, NavDropdown, Navbar } from "react-bootstrap";
-import "./Nav.css";
+import "./NavbarComponent.css";
 
 function NavbarComponent() {
   return (
