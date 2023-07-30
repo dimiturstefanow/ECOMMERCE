@@ -3,19 +3,18 @@ import FooterComponent from "./Navigation/FooterComponent";
 import Products from "./Products/Products";
 import "./App.css";
 import Recommended from "./Recommended/Recommended";
-
-
+import Sidebar from "./Sidebar/Sidebar";
 
 function App() {
   return (
     <>
-    <div className="App">
-      
-    <NavbarComponent />
-    <Recommended />
-    <Products />
-    <FooterComponent />
-    </div>
+      <div className="App">
+        <Sidebar />
+        <NavbarComponent />
+        <Recommended />
+        <Products />
+        <FooterComponent />
+      </div>
     </>
   );
 }
