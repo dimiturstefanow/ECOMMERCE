@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/c4 nexus logo.png";
+import logo from "../images/c4_nexus_logo-removebg-preview.png";
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 import "./NavbarComponent.css";
@@ -7,7 +7,7 @@ import "./NavbarComponent.css";
 function NavbarComponent() {
   return (
     <>
-      <Navbar bg="white" sticky="top" expand="sm" collapseOnSelect>
+      <Navbar className="navbar" sticky="top" expand="sm" collapseOnSelect>
         <Navbar.Brand>
           <img src={logo} alt="" className="logo-img" />
         </Navbar.Brand>

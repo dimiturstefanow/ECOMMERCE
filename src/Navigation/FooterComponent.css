@@ -2,7 +2,7 @@
   background: var(--mainDark);
   padding-top: 3rem;
   color: var(--mainWhite);
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
