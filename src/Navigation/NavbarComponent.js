@@ -21,11 +21,11 @@ function NavbarComponent() {
                 Promotions
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#products/pants">Pants</NavDropdown.Item>
+              <NavDropdown.Item href="#products/pants">Nike</NavDropdown.Item>
               <NavDropdown.Item href="#products/shirts">
-                Shirts
+                Adidas
               </NavDropdown.Item>
-              <NavDropdown.Item href="#products/shoes">Shoes</NavDropdown.Item>
+             
             </NavDropdown>
             <Nav.Link href="#about" className="navigation-link">
               About
