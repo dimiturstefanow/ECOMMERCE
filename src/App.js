@@ -63,11 +63,13 @@ function App() {
     );
   }
 
+  const result = filteredData(products, selectedCategory, query)
+  
   return (
     <>
       <div className="App">
         <NavbarComponent />
-        <Sidebar />
+        <Sidebar handleChange={handleChange}/>
         <Recommended />
         <Products />
         <FooterComponent />
