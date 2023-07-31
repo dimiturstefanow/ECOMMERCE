@@ -10,6 +10,8 @@ function Category({ handleChange }) {
           <input onChange={handleChange} type="radio" value="" name="test" />
           <span className="checkmark"></span> All
         </label>
+       
+        
 
         <input
           handleChange={handleChange}
