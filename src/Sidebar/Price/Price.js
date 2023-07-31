@@ -9,6 +9,22 @@ function Price({ handleChange }) {
         <input onChange={handleChange} type="radio" value="" name="test2" />
         <span className="checkmark"></span> All
       </label>
+      <label className="sidebar-label-container">
+        <input onChange={handleChange} type="radio" value="50" name="$0 - $50" />
+        <span className="checkmark"></span> All
+      </label>
+      <label className="sidebar-label-container">
+        <input onChange={handleChange} type="radio" value="100" name="$50 - $100" />
+        <span className="checkmark"></span> All
+      </label>
+      <label className="sidebar-label-container">
+        <input onChange={handleChange} type="radio" value="150" name="$100 - $150" />
+        <span className="checkmark"></span> All
+      </label>
+      <label className="sidebar-label-container">
+        <input onChange={handleChange} type="radio" value="200" name="test2" />
+        <span className="checkmark"></span> Over $150
+      </label>
 
       <input
         handleChange={handleChange}
