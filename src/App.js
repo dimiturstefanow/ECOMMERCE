@@ -6,7 +6,7 @@ import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import { useState } from "react";
 import products from "./db/data";
-import { computeHeadingLevel } from "@testing-library/react";
+
 import { Card } from "react-bootstrap";
 
 function App() {
