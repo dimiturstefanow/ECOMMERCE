@@ -48,19 +48,19 @@ function App() {
           title === selected
       );
     }
-    return filteredProducts.map(({ img, title, star, reviews, newPrice, prevPrice }) => (
-      <Card
-       key={Math.random()} 
-       img={img}
-       title={title}
-       star={star}
-       reviews={reviews}
-       newPrice={newPrice}
-       prevPrice={prevPrice}
-
-
-       />
-    ));
+    return filteredProducts.map(
+      ({ img, title, star, reviews, newPrice, prevPrice }) => (
+        <Card
+          key={Math.random()}
+          img={img}
+          title={title}
+          star={star}
+          reviews={reviews}
+          newPrice={newPrice}
+          prevPrice={prevPrice}
+        />
+      )
+    );
   }
 
   return (
