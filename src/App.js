@@ -16,7 +16,7 @@ function App() {
   // Input Filter
 
   const filteredItems = products.filter((product) =>
-    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
   );
 
   // Radio Filter
@@ -31,40 +31,35 @@ function App() {
 
   function filteredData(products, selected, query) {
     let filteredProducts = products;
-
-    // Filtering input Items
+  
     if (query) {
       filteredProducts = filteredItems;
     }
-
-    // Selected Filter
+  
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, company, newPrice, title }) =>
           category === selected ||
           color === selected ||
           company === selected ||
-          newPrice === selected ||
+          newPrice == selected || // Use loose equality (==) here
           title === selected
       );
-    } 
-    // save before update
-    return filteredProducts.map(
-      ({ img, title, star, reviews, newPrice, prevPrice }) => (
-        <Card
-          key={Math.random()}
-          img={img}
-          title={title}
-          star={star}
-          reviews={reviews}
-          newPrice={newPrice}
-          prevPrice={prevPrice}
-        /> 
-      )
-    );
+    }
+  
+    return filteredProducts.map(({ img, title, star, reviews, prevPrice }) => (
+      <Card
+        key={Math.random()}
+        img={img}
+        title={title}
+        star={star}
+        reviews={reviews}
+        prevPrice={prevPrice}
+      />
+    ));
   }
 
-  const result = filteredData(products, selectedCategory, query)
+  const result = filteredData(products, selectedCategory, query);
   
   return (
     <>
@@ -72,7 +67,7 @@ function App() {
         <NavbarComponent />
         <Sidebar handleChange={handleChange}/>
         <Recommended handleClick={handleClick}/>
-        <Products  result={result}/> 
+        <Products result={result} /> {/* Uncommented the Products component */}
         <FooterComponent />
       </div>
     </>
