@@ -7,7 +7,8 @@ import Sidebar from "./Sidebar/Sidebar";
 import { useState } from "react";
 import products from "./db/data";
 
-import { Card } from "react-bootstrap";
+// Import the custom Card component instead of the one from react-bootstrap
+import Card from "./components/Card";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -47,14 +48,14 @@ function App() {
       );
     }
   
-    return filteredProducts.map(({ img, title, star, reviews, prevPrice }) => (
+    return filteredProducts.map(({ img, title, star, reviews, newPrice }) => (
       <Card
         key={Math.random()}
         img={img}
         title={title}
         star={star}
         reviews={reviews}
-        prevPrice={prevPrice}
+        newPrice={newPrice} // Use "newPrice" instead of "prevPrice"
       />
     ));
   }
