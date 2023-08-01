@@ -47,7 +47,8 @@ function App() {
           newPrice === selected ||
           title === selected
       );
-    }
+    } 
+    // save before update
     return filteredProducts.map(
       ({ img, title, star, reviews, newPrice, prevPrice }) => (
         <Card
@@ -58,7 +59,7 @@ function App() {
           reviews={reviews}
           newPrice={newPrice}
           prevPrice={prevPrice}
-        />
+        /> 
       )
     );
   }
