@@ -4,13 +4,9 @@ import { AiOutlineStar } from "react-icons/ai";
 function Card({ img, title, star, reviews, newPrice, prevPrice }) {
   return (
     <section className="card">
-      <img
-        src={img}
-        alt="Shoe"
-        className="card-image"
-      />
+      <img src={img} alt={title} className="card-image" />
       <div className="card-details">
-        <h3 className="card-title"> Shoe</h3>
+        <h3 className="card-title">{title}</h3>
         <section className="card-reviews">
           <AiFillStar className="ratings-start" />
           <AiFillStar className="ratings-start" />

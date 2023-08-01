@@ -21,7 +21,7 @@ function App() {
 
   // Radio Filter
   const handleChange = (event) => {
-    selectedCategory(event.target.value);
+    setSelectedCategory(event.target.value); // Use setSelectedCategory to update the state
   };
 
   // Buttons Filter
