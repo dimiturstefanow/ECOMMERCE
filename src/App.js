@@ -70,8 +70,8 @@ function App() {
       <div className="App">
         <NavbarComponent />
         <Sidebar handleChange={handleChange}/>
-        <Recommended />
-        <Products />
+        <Recommended handleClick={handleClick}/>
+        <Products  result={result}/> 
         <FooterComponent />
       </div>
     </>
