@@ -17,7 +17,7 @@ function Card({ img, title, star, reviews, newPrice, prevPrice }) {
         </section>
         <section className="card-price">
           <div className="price">
-            <del>$200</del>$150
+            <del>{prevPrice ? `$${prevPrice}` : ""}</del>${newPrice}
           </div>
           <div className="favorite">
             <AiOutlineStar className="favorite-icon" />
