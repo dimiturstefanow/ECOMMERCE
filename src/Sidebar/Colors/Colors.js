@@ -9,6 +9,7 @@ function Colors({ handleChange }) {
         <input onChange={handleChange} type="radio" value="" name="test2" />
         <span className="checkmark all" ></span> All
       </label>
+      {/* checkpoint  */}
       <input handleChange={handleChange} 
       value="black"
       title="Black"
