@@ -1,4 +1,4 @@
-
+import Buttons from "../components/Buttons";
 import "./Recommended.css";
 
 function Recommended() {
@@ -8,12 +8,12 @@ function Recommended() {
         <h2 className="recommended-title">Recommened</h2>
         <div className="recommended-flex">
           <button className="btns">All Products</button>
-          <button className="btns">Nike</button>
-          <button className="btns">Adidas</button>
+          <Buttons onClickHandler={handleClick} value="Nike" title="Nike" />
+          <Buttons onClickHandler={handleClick} value="Adidas" title="Adidas" />
         </div>
       </div>
     </>
   );
-} 
+}
 
 export default Recommended;

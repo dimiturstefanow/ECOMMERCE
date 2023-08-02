@@ -68,7 +68,7 @@ function App() {
         <NavbarComponent />
         <Sidebar handleChange={handleChange}/>
         <Recommended handleClick={handleClick}/>
-        <Products result={result} /> {/* Uncommented the Products component */}
+        <Products result={result} /> 
         <FooterComponent />
       </div>
     </>
