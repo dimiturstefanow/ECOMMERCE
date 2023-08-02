@@ -8,16 +8,12 @@ function Card({ img, title, star, reviews, newPrice, prevPrice }) {
       <div className="card-details">
         <h3 className="card-title">{title}</h3>
         <section className="card-reviews">
-          <AiFillStar className="ratings-start" />
-          <AiFillStar className="ratings-start" />
-          <AiFillStar className="ratings-start" />
-          <AiFillStar className="ratings-start" />
-          <AiFillStar className="ratings-start" />
-          <span className="total-reviews">5</span>
+        {star}{star}{star}{star}{star}
+          <span className="total-reviews">{reviews}</span>
         </section>
         <section className="card-price">
           <div className="price">
-            <del>{prevPrice ? `$${prevPrice}` : ""}</del>${newPrice}
+          <del>{prevPrice ? `$${prevPrice}` : ""}</del>${newPrice}
           </div>
           <div className="favorite">
             <AiOutlineStar className="favorite-icon" />
