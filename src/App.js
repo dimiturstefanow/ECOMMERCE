@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import Filter from "./components/filter/Filter";
-import ProductsGrid from "./components/productsGrid/ProductsGrid";
+import Filter from "./components/Filter/Filter";
+import ProductsGrid from "./components/ProductsGrid/ProductsGrid";
 import data from "./db/data";
+import Navbar from "../src/Navigation/Navbar";
+import Footer from "../src/Navigation/Footer";
 
 function App() {
   const [products, setProducts] = useState(data);
@@ -9,14 +11,17 @@ function App() {
 
   const callBack = (products) => {
     setMaxProducts(10);
-    setProducts(products)
-  }
+    setProducts(products);
+  };
 
   return (
     <div>
-        <Filter callBack={callBack}/>
-        <ProductsGrid products={products} maxProducts={maxProducts} sort={3}/>
-        <button onClick={() => setMaxProducts(maxProducts + 1)}>Load more</button>
+      <Navbar />
+
+      <Filter callBack={callBack} />
+      <ProductsGrid products={products} maxProducts={maxProducts} sort={3} />
+      <button onClick={() => setMaxProducts(maxProducts + 1)}>Load more</button>
+      <Footer />
     </div>
   );
 }
