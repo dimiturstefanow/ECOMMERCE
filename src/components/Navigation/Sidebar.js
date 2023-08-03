@@ -1,5 +1,5 @@
 import "./Sidebar.css";
-import Filter from "../components/Filter/Filter";
+import Filter from "../Filter/Filter";
 
 function Sidebar({ handleChange }) {
   return (

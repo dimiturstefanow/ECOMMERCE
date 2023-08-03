@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../Images/c4_nexus_logo-removebg-preview.png";
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 import "./Navbar.css";
+import logo from "../Images/c4_nexus_logo-removebg-preview.png"
 
 function NavbarComponent() {
   return (

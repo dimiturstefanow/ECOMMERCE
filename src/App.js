@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Filter from "./components/Filter/Filter";
 import ProductsGrid from "./components/ProductsGrid/ProductsGrid";
 import data from "./db/data";
-import Navbar from "../src/Navigation/Navbar";
-import Footer from "../src/Navigation/Footer";
+import Navbar from "./components/Navigation/Navbar";
+import Footer from "./components/Navigation/Footer";
 
 function App() {
   const [products, setProducts] = useState(data);
