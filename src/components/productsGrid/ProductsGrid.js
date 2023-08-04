@@ -9,22 +9,14 @@ function ProductsGrid({ products, maxProducts, sort }) {
     products.sort((a, b) => b.title.localeCompare(a.title));
   } else if (sort == 3) {
     products.sort((a, b) => {
-      const aPrice = parseFloat(
-        (a.discountPrice == null ? a.price : a.discountPrice).replace("$", "")
-      );
-      const bPrice = parseFloat(
-        (b.discountPrice == null ? b.price : b.discountPrice).replace("$", "")
-      );
+      const aPrice = a.discountPrice > 0 ? a.discountPrice : a.price
+      const bPrice = b.discountPrice > 0 ? b.discountPrice : b.price
       return aPrice - bPrice;
     });
   } else if (sort == 4) {
     products.sort((a, b) => {
-      const aPrice = parseFloat(
-        (a.discountPrice == null ? a.price : a.discountPrice).replace("$", "")
-      );
-      const bPrice = parseFloat(
-        (b.discountPrice == null ? b.price : b.discountPrice).replace("$", "")
-      );
+      const aPrice = a.discountPrice > 0 ? a.discountPrice : a.price
+      const bPrice = b.discountPrice > 0 ? b.discountPrice : b.price
       return bPrice - aPrice;
     });
   }

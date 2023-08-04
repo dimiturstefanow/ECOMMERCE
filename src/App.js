@@ -7,7 +7,7 @@ import Footer from "./components/Navigation/Footer";
 import "./app.css";
 import SortDropdown from "./components/SortDropdown/SortDropdown";
 
-const productsToShow = 50;
+const productsToShow = 5;
 
 function App() {
   const [products, setProducts] = useState(data);
@@ -31,21 +31,29 @@ function App() {
       <Navbar />
       <div className="d-flex flex-column">
         <div className="d-flex">
-        <p style={{marginLeft: "auto", marginBottom: "0", alignSelf: "center", color: "#8e8a8a", fontSize: "16px"}}>
-          Products displayed:{" "}
-          {maxProducts > products.length
-            ? maxProducts - (maxProducts - products.length)
-            : maxProducts}
-        </p>
-        <SortDropdown
-          sortName={sortData.sortName}
-          callBack={(sortValue, sortName) => {
-            setSortData({
-              sort: sortValue,
-              sortName: sortName,
-            });
-          }}
-        />
+          <p
+            style={{
+              marginLeft: "auto",
+              marginBottom: "0",
+              alignSelf: "center",
+              color: "#8e8a8a",
+              fontSize: "16px",
+            }}
+          >
+            Products displayed:{" "}
+            {maxProducts > products.length
+              ? maxProducts - (maxProducts - products.length)
+              : maxProducts}
+          </p>
+          <SortDropdown
+            sortName={sortData.sortName}
+            callBack={(sortValue, sortName) => {
+              setSortData({
+                sort: sortValue,
+                sortName: sortName,
+              });
+            }}
+          />
         </div>
         <div className="d-flex flex-row">
           <Filter callBack={callBack} />
@@ -55,9 +63,10 @@ function App() {
             sort={sortData.sort}
           />
         </div>
+
         <button
           className="load-more-button btn btn-outline-secondary"
-          onClick={() => setMaxProducts(maxProducts + 1)}
+          onClick={() => setMaxProducts(maxProducts + productsToShow)}
         >
           Load more
         </button>
