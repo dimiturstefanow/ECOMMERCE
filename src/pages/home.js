@@ -1,10 +1,8 @@
 import React, { Fragment, useState } from "react";
-import Filter from "./components/Filter/Filter";
-import ProductsGrid from "./components/ProductsGrid/ProductsGrid";
-import data from "./db/data";
-
-import "./app.css";
-import SortDropdown from "./components/SortDropdown/SortDropdown";
+import Filter from "../components/Filter/Filter";
+import ProductsGrid from "../components/ProductsGrid/ProductsGrid";
+import data from "../db/data";
+import SortDropdown from "../components/SortDropdown/SortDropdown";
 
 const productsToShow = 5;
 

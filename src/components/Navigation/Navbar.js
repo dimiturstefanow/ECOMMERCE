@@ -24,12 +24,11 @@ function NavbarComponent() {
             <Nav.Link className="navigation-link">
               <Link to="/">Home</Link>
             </Nav.Link>
-            <Nav.Link className="navigation-link"><Link to="/">About</Link></Nav.Link>
-            <Nav.Link className="navigation-link"><Link to="/">Contacts</Link></Nav.Link>
+            <Nav.Link className="navigation-link"><Link to="/About">About</Link></Nav.Link>
+            <Nav.Link className="navigation-link"><Link to="/Contact">Contacts</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div className="content"></div>
     </>
   );
 }
