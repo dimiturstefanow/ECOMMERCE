@@ -7,7 +7,7 @@ import Footer from "./components/Navigation/Footer";
 import "./app.css";
 import SortDropdown from "./components/SortDropdown/SortDropdown";
 
-const productsToShow = 10;
+const productsToShow = 50;
 
 function App() {
   const [products, setProducts] = useState(data);
