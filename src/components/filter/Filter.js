@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../../db/data";
+import products from "../../db/data";
 import "./Filter.css";
 
 function Filter({ callBack }) {
@@ -13,50 +13,26 @@ function Filter({ callBack }) {
   const [shouldFilter, setShouldFilter] = useState(false);
 
   const filterProducts = () => {
-    let result = null;
-    if (
-      Object.values(filter).every((value) => {
-        return value === null;
-      })
-    ) {
-      result = data;
-    } else {
-      result = [];
-      for (let product of data) {
-        let match = true;
-        if (filter.category != null && product.category != filter.category) {
-          match = false;
-          continue;
-        }
-        if (filter.color != null && product.color != filter.color) {
-          match = false;
-          continue;
-        }
-        if (filter.company != null && product.company != filter.company) {
-          match = false;
-          continue;
-        }
-        if (filter.price != null) {
-          const prices = filter.price.split("-");
-          const productPrice = parseFloat(
-            (product.discountPrice == null
-              ? product.price
-              : product.discountPrice
-            ).replace("$", "")
-          );
+    const hasFilter = Object.values(filter).some((value) => value !== null);
+    const result = !hasFilter
+      ? products 
+      : products.filter((p) => {
+          if (filter.category != null && p.category != filter.category) return false;
+          if (filter.color != null && p.color != filter.color) return false;
+          if (filter.company != null && p.company != filter.company) return false;
+          if (filter.price != null) {
+            const prices = filter.price.split("-");
+            const minPrice = prices[0]
+            const maxPrice = prices.length > 1 ? prices[1] : null;
+            const price = p.discountPrice > 0 ? p.discountPrice : p.price;
 
-          if (prices.length === 2) {
-            match = productPrice >= prices[0] && productPrice <= prices[1];
-          } else {
-            match = productPrice >= prices[0];
+            return maxPrice > 0
+              ? price >= minPrice && price <= maxPrice
+              : price >= minPrice;
           }
-        }
 
-        if (match) {
-          result.push(product);
-        }
-      }
-    }
+          return true;
+        });
 
     setShouldFilter(false);
     callBack(result);
@@ -67,7 +43,7 @@ function Filter({ callBack }) {
 
     const name = event.target.name;
     const value = event.target.value;
-    console.log(value);
+
     if (filter[name] === value || value === "null") {
       setFilter({
         ...filter,

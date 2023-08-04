@@ -15,7 +15,11 @@ function Card({ img, title, star, reviews, price, discountPrice }) {
             </section>
             <section className="card-price">
               <div className="price">
-              <del>{price}</del>{discountPrice}
+                {
+                  discountPrice > 0 
+                  ? <div><del>${price}</del><div>${discountPrice}</div></div>
+                  : <div>${price}</div>
+                }
               </div>
               <div className="favorite">
                 <AiOutlineStar className="favorite-icon" />

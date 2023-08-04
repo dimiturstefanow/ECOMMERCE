@@ -32,7 +32,7 @@ function ProductsGrid({ products, maxProducts, sort }) {
   const result = products.map(
     ({ img, title, star, reviews, price, discountPrice }, index) => {
       if (index >= maxProducts) {
-        return;
+        return null;
       }
 
       return (
@@ -50,7 +50,15 @@ function ProductsGrid({ products, maxProducts, sort }) {
   );
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", width: "100%", maxHeight: "800px", overflowY: "scroll"}}>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        width: "100%",
+        maxHeight: "800px",
+        overflowY: "scroll",
+      }}
+    >
       {result}
     </div>
   );

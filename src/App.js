@@ -56,7 +56,7 @@ function App() {
           />
         </div>
         <button
-          className="load-more-button btn btn-primary"
+          className="load-more-button btn btn-outline-secondary"
           onClick={() => setMaxProducts(maxProducts + 1)}
         >
           Load more
