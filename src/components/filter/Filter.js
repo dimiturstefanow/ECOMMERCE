@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import data from "../../db/data";
+import "./Filter.css";
 
 function Filter({ callBack }) {
   const [filter, setFilter] = useState({
@@ -8,8 +9,6 @@ function Filter({ callBack }) {
     category: null,
     company: null,
   });
-
-  console.log(filter);
 
   const [shouldFilter, setShouldFilter] = useState(false);
 
@@ -24,33 +23,38 @@ function Filter({ callBack }) {
     } else {
       result = [];
       for (let product of data) {
-          let match = true;
-          if (filter.category != null && product.category != filter.category) {
-              match = false;
-              continue;
-          }
-          if (filter.color != null && product.color != filter.color) {
-              match = false;
-              continue;
-          }
-          if (filter.company != null && product.company != filter.company) {
-            match = false;
-            continue;
-          }
-          if (filter.price != null) {
-           const prices = filter.price.split("-");
-           const productPrice = parseFloat((product.discountPrice == null ? product.price : product.discountPrice).replace("$", ""));
+        let match = true;
+        if (filter.category != null && product.category != filter.category) {
+          match = false;
+          continue;
+        }
+        if (filter.color != null && product.color != filter.color) {
+          match = false;
+          continue;
+        }
+        if (filter.company != null && product.company != filter.company) {
+          match = false;
+          continue;
+        }
+        if (filter.price != null) {
+          const prices = filter.price.split("-");
+          const productPrice = parseFloat(
+            (product.discountPrice == null
+              ? product.price
+              : product.discountPrice
+            ).replace("$", "")
+          );
 
-           if (prices.length === 2) {
-              match = productPrice >= prices[0] && productPrice <= prices[1];
-           } else {
-              match = productPrice >= prices[0];
-           }
+          if (prices.length === 2) {
+            match = productPrice >= prices[0] && productPrice <= prices[1];
+          } else {
+            match = productPrice >= prices[0];
           }
+        }
 
-          if (match) {
-            result.push(product);
-          }
+        if (match) {
+          result.push(product);
+        }
       }
     }
 
@@ -63,7 +67,7 @@ function Filter({ callBack }) {
 
     const name = event.target.name;
     const value = event.target.value;
-    console.log(value)
+    console.log(value);
     if (filter[name] === value || value === "null") {
       setFilter({
         ...filter,
@@ -84,142 +88,172 @@ function Filter({ callBack }) {
   }
 
   return (
-    <div>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="null"
-          name="category"
-        />
-        <span className="checkmark">All</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="sneakers"
-          name="category"
-        />
-        <span className="checkmark">Sneakers</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="flats"
-          name="category"
-        />
-        <span className="checkmark">Flats</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="sandals"
-          name="category"
-        />
-        <span className="checkmark">Sandals</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="null"
-          name="color"
-        />
-        <span className="checkmark">All</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="black"
-          name="color"
-        />
-        <span className="checkmark">Black</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="blue"
-          name="color"
-        />
-        <span className="checkmark">Blue</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="red"
-          name="color"
-        />
-        <span className="checkmark">Red</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="green"
-          name="color"
-        />
-        <span className="checkmark">Green</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="white"
-          name="color"
-        />
-        <span className="checkmark">White</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="null"
-          name="price"
-        />
-        <span className="checkmark">All</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="0-50"
-          name="price"
-        />
-        <span className="checkmark">$0 - $50</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="50-100"
-          name="price"
-        />
-        <span className="checkmark">$50 - $100</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="100-150"
-          name="price"
-        />
-        <span className="checkmark">$100 - $150</span>
-      </label>
-      <label className="sidebar-label-container">
-        <input
-          onChange={changeFilter}
-          type="radio"
-          value="150"
-          name="price"
-        />
-        <span className="checkmark">Over $150</span>
-      </label>
+    <div className="sidebar-filter">
+      <div>
+        <h2>Category</h2>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="null"
+            name="category"
+          />
+          <span className="checkmark">All</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="sneakers"
+            name="category"
+          />
+          <span className="checkmark">Sneakers</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="flats"
+            name="category"
+          />
+          <span className="checkmark">Flats</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="sandals"
+            name="category"
+          />
+          <span className="checkmark">Sandals</span>
+        </label>
+      </div>
+      <div>
+        <h2>Color</h2>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="null"
+            name="color"
+          />
+          <span className="checkmark">All</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="black"
+            name="color"
+          />
+          <span className="checkmark">Black</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="blue"
+            name="color"
+          />
+          <span className="checkmark">Blue</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="red"
+            name="color"
+          />
+          <span className="checkmark">Red</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="green"
+            name="color"
+          />
+          <span className="checkmark">Green</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="white"
+            name="color"
+          />
+          <span className="checkmark">White</span>
+        </label>
+      </div>
+      <div>
+        <h2>Price</h2>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="null"
+            name="price"
+          />
+          <span className="checkmark">All</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="0-50"
+            name="price"
+          />
+          <span className="checkmark">$0 - $50</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="50-100"
+            name="price"
+          />
+          <span className="checkmark">$50 - $100</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="100-150"
+            name="price"
+          />
+          <span className="checkmark">$100 - $150</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="150"
+            name="price"
+          />
+          <span className="checkmark">Over $150</span>
+        </label>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="Adidas"
+            name="company"
+          />
+          <span className="checkmark">Adidas</span>
+        </label>
+        <label className="sidebar-label-container">
+          <input
+            onChange={changeFilter}
+            type="radio"
+            value="Nike"
+            name="company"
+          />
+          <span className="checkmark">Nike</span>
+        </label>
+      </div>
     </div>
   );
 }

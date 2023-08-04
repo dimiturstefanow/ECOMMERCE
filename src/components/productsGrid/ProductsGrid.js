@@ -1,19 +1,33 @@
 import React from "react";
 import Card from "./Card";
+import "./ProductsGrid.css";
 
-function ProductsGrid({ products, maxProducts, sort}) {
-  console.log(products)
+function ProductsGrid({ products, maxProducts, sort }) {
   if (sort == 1) {
     products.sort((a, b) => a.title.localeCompare(b.title));
   } else if (sort == 2) {
-    products.sort((a, b) => !a.title.localeCompare(b.title));
+    products.sort((a, b) => b.title.localeCompare(a.title));
   } else if (sort == 3) {
-    products.sort((a, b) => a.discountPrice == null ? a.price : a.discountPrice - b.discountPrice == null ? b.price : b.discountPrice)
-  } else {
-    products.sort((a, b) =>  b.discountPrice == null ? b.price : b.discountPrice - a.discountPrice == null ? a.price : a.discountPrice)
+    products.sort((a, b) => {
+      const aPrice = parseFloat(
+        (a.discountPrice == null ? a.price : a.discountPrice).replace("$", "")
+      );
+      const bPrice = parseFloat(
+        (b.discountPrice == null ? b.price : b.discountPrice).replace("$", "")
+      );
+      return aPrice - bPrice;
+    });
+  } else if (sort == 4) {
+    products.sort((a, b) => {
+      const aPrice = parseFloat(
+        (a.discountPrice == null ? a.price : a.discountPrice).replace("$", "")
+      );
+      const bPrice = parseFloat(
+        (b.discountPrice == null ? b.price : b.discountPrice).replace("$", "")
+      );
+      return bPrice - aPrice;
+    });
   }
-
-  console.log(products);
 
   const result = products.map(
     ({ img, title, star, reviews, price, discountPrice }, index) => {
@@ -36,7 +50,7 @@ function ProductsGrid({ products, maxProducts, sort}) {
   );
 
   return (
-    <div>
+    <div style={{ display: "flex", flexWrap: "wrap", width: "100%", maxHeight: "800px", overflowY: "scroll"}}>
       {result}
     </div>
   );

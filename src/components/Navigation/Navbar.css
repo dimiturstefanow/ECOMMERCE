@@ -1,10 +1,6 @@
 .bg-myWhite {
     background-color: white;
   }
-  /* .content {
-      padding: 12px;
-      height: 3000px;
-    } */
   :root {
     --mainDark: #343a40;
     --mainGrey: rgba(109, 109, 109);
