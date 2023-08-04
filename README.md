@@ -14,8 +14,9 @@ ___
 ___
 ### Screenshots:
 
-![Screenshot_2](https://github.com/dimiturstefanow/Listify/assets/126346506/f1291d66-d965-4dd7-9c46-503946d17110)
 ![Screenshot_1](https://github.com/dimiturstefanow/Listify/assets/126346506/1aa3a3f5-aa66-43cb-b19c-cca54e106c18)
+![Screenshot_2](https://github.com/dimiturstefanow/Listify/assets/126346506/f1291d66-d965-4dd7-9c46-503946d17110)
+
 
 
 
