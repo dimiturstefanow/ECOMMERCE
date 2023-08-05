@@ -49,4 +49,6 @@ const products = [...data, ...data, ...data]
     discountPrice: getRndInteger(0, 99),
   }))
 
+  // fixed implementing
+
 export default products;
