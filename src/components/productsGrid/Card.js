@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { AiOutlineStar } from "react-icons/ai";
 import "./card.css";
 
-function Card({ img, title, star, reviews, price, discountPrice }) {
+function Card({img, title, star, reviews, price, discountPrice, addToFav, isFavorite }) {
     return (
         <section className="card">
           <img src={img} alt={title} className="card-image" />
