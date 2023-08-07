@@ -12,6 +12,7 @@ const productsToShow = 5;
 function App() {
   const [products, setProducts] = useState(data);
   const [maxProducts, setMaxProducts] = useState(productsToShow);
+  const [favorites, setFavorites] = useState([]);
   const [sortData, setSortData] = useState({
     sort: 1,
     sortName: "Alphabetical a-z",
@@ -26,14 +27,20 @@ function App() {
     });
   };
 
-  const newData = data.map((product, i) => {
-    return {
-      ...product,
-      id: String(i + 1),
-    };
-  });
+  const addToFav = (productId) => {
+    setFavorites((previousState) => {
+      const stateCopy = previousState.slice();
+      const exists = previousState.indexOf(productId);
 
-  console.log(newData);
+      if (exists === -1) {
+        stateCopy.push(productId);
+      } else {
+        stateCopy.splice(exists, 1);
+      }
+
+      return stateCopy;
+    });
+  };
 
   return (
     <div>
