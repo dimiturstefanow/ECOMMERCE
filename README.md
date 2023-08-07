@@ -18,7 +18,7 @@ ___
 * Bootstrap
 
 ___
-# The idea of this project is to serve the client who is willing to buy something from Ecommerce Application
+## The idea of this project is to serve the client who is willing to buy something from Ecommerce Application
 ___
 ## In order to start and try the application you have to run these commands in the terminal:
 * npm install
