@@ -1,5 +1,5 @@
 ## C4 NEXUS - Ecommerce / Fully Web Application
-___
+
 
 
 
@@ -11,20 +11,19 @@ ___
 * Product Name Description
 * Load More
 * Add to favorites
-___
 
 ## Technology used:
 * ReactJS
 * Bootstrap
 
-___
+
 ## The idea of this project is to serve the client who is willing to buy something from Ecommerce Application
-___
+
 ## In order to start and try the application you have to run these commands in the terminal:
 * npm install
 * npm install bootstrap
 
-___
+
 ### Screenshots:
 
 ![Screenshot_1](https://github.com/dimiturstefanow/Listify/assets/126346506/1aa3a3f5-aa66-43cb-b19c-cca54e106c18)
