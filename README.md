@@ -1,7 +1,7 @@
-## C4 NEXUS - Ecommerce 
+## C4 NEXUS - Ecommerce / Fully working Ecommerce Web Application
 ___
 
-* Fully working Ecommerce Web Application
+
 
 ## With this app I have covored my client's requirements:
 * Product counter
