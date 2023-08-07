@@ -40,17 +40,25 @@ function NavbarComponent({ favorites }) {
               Favorites{" "}
               <span className="favorites-button">{favorites.length}</span>
               <div className="fav-dropdown">
-                <div style={{display: showFav ? "block" : "none"}} className="fav-dropdown-content">
-                  {favProducts.map((product) => 
-                  <div key={product.id}>
-                      <div style={{display: "flex"}}>
-                        <img src={product.img} />
-                        <p>{product.title}</p>
+                <div
+                  style={{ display: showFav ? "block" : "none" }}
+                  className="fav-dropdown-content"
+                >
+                  {favProducts.map((product) => (
+                    <div key={product.id} className="cart-item">
+                      <div className="product-container">
+                        <img
+                          src={product.img}
+                          alt={product.title}
+                          className="product-image"
+                        />
+                        <div className="product-info">
+                          <p>{product.title}</p>
+                          <p className="product-price">${product.price}</p>
+                        </div>
                       </div>
-                      <div style={{display: "flex", flexDirection: "column"}}>
-                        <p style={{marginLeft: "auto"}}>{product.price}</p>
-                      </div>
-                  </div>)}
+                    </div>
+                  ))}
                 </div>
               </div>
             </Nav.Link>

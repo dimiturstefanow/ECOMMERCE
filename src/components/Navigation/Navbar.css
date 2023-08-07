@@ -29,14 +29,13 @@
 }
 .favorites-button {
   position: absolute;
-  bottom: -10px;
-  right: -5px;
+  bottom: -5px;
+  right: 30px;
   border-radius: 5px;
   background-color: var(--mainGrey);
   padding: 0 10px;
   color: white;
-  font-size: 15px;
-
+  font-size: 13px;
 }
 
 .fav-dropdown {
@@ -54,8 +53,42 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   left: -1px;
+}
+.cart-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-price {
+  align-self: flex-end;
+  font-size: 18px;
+  font-weight: bold;
 }
