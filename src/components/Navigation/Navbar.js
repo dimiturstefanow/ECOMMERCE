@@ -23,8 +23,8 @@ function NavbarComponent() {
           <Nav.Link onClick={handleLogoClick} href="#about" className="navigation-link">
               Home
             </Nav.Link>
-            <Nav.Link href="#about" className="navigation-link">
-              About
+            <Nav.Link href="#favorites" className="navigation-link">
+              Favorites
             </Nav.Link>
             <Nav.Link href="#contact-us" className="navigation-link">
               Contact Us

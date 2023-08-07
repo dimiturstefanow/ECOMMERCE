@@ -26,6 +26,15 @@ function App() {
     });
   };
 
+  const newData = data.map((product, i) => {
+    return {
+      ...product,
+      id: String(i + 1),
+    };
+  });
+
+  console.log(newData);
+
   return (
     <div>
       <Navbar />
