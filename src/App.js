@@ -42,9 +42,11 @@ function App() {
     });
   };
 
+console.log(favorites);
+
   return (
     <div>
-      <Navbar />
+      <Navbar favorites={favorites} />
       <div className="d-flex flex-column">
         <div className="d-flex">
           <p

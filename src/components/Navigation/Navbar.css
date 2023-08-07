@@ -1,27 +1,40 @@
 .bg-myWhite {
-    background-color: white;
-  }
-  :root {
-    --mainDark: #343a40;
-    --mainGrey: rgba(109, 109, 109);
-    --mainLightGrey: rgba(172, 172, 172);
-    --mainWhite: #fff;
-    --mainBlue: #007bff;
-  }
-  .right-aligned {
-    justify-content: flex-end;
-  }
-  .navigation-link {
-    /* background-color: red; */
-    margin: 60px;
-    font-size: 20px;
-  }
-  .logo-img {
-    margin-left: 75px;
-    margin-right: 75px;
-    width: 200px;
-  }
-  .navbar {
-    background-color: rgb(236, 225, 225);
-  }
-  
+  background-color: white;
+}
+:root {
+  --mainDark: #343a40;
+  --mainGrey: rgba(109, 109, 109);
+  --mainLightGrey: rgba(172, 172, 172);
+  --mainWhite: #fff;
+  --mainBlue: #007bff;
+}
+.right-aligned {
+  justify-content: flex-end;
+}
+.navigation-link {
+  /* background-color: red; */
+  margin: 60px;
+  font-size: 20px;
+}
+.logo-img {
+  margin-left: 75px;
+  margin-right: 75px;
+  width: 200px;
+}
+.navbar {
+  background-color: rgb(236, 225, 225);
+}
+.wrapper-fav-button {
+  position: relative;
+}
+.favorites-button {
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
+  border-radius: 5px;
+  background-color: var(--mainGrey);
+  padding: 0 10px;
+  color: white;
+  font-size: 15px;
+
+}
