@@ -3,7 +3,7 @@ ___
 
 
 
-## With this project I have covored my client's requirements:
+## Within this project I have covored my client's requirements:
 * Product counter
 * Product Grid
 * Filtering mechanism
