@@ -77,6 +77,8 @@ function App() {
             products={products}
             maxProducts={maxProducts}
             sort={sortData.sort}
+            favorites={favorites}
+            addToFav={addToFav}
           />
         </div>
 
