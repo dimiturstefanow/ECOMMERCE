@@ -2,7 +2,15 @@
 ___
 
 * Fully working Ecommerce Web Application
-* With this app I have covored my client's requirements, some of the major one (Product counter, Product Grid, Filtering mechanism, Sorting mechanism, Product Name and Description, Load More and more)
+
+## With this app I have covored my client's requirements:
+* Product counter
+* Product Grid
+* Filtering mechanism
+* Sorting mechanism
+* Product Name Description
+* Load More
+* Add to favorites
 ___
 
 ## Technology used:
