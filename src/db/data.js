@@ -2,6 +2,7 @@ import { AiFillStar } from "react-icons/ai";
 
 const data = [
   {
+    id: 1,
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
     title: "Nike Air Monarch IV",
     star: <AiFillStar className="ratings-start" />,
@@ -13,6 +14,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 2,
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
     title: "Nike Air Vapormax Plus",
     star: <AiFillStar className="ratings-start" />,
@@ -24,6 +26,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 3,
     img: "https://m.media-amazon.com/images/I/71205al61QL._AC_UL400_.jpg",
     title: "Adidas Men's Pace VS-M",
     star: <AiFillStar className="ratings-start" />,
@@ -35,6 +38,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 4,
     img: "https://m.media-amazon.com/images/I/612xxU2Ni7L._AC_UL400_.jpg",
     title: "Adidas Unisex-Adult Adilette",
     star: <AiFillStar className="ratings-start" />,
@@ -46,6 +50,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 5,
     img: "https://m.media-amazon.com/images/I/71tO3cnBMKL._AC_UL600_FMwebp_QL65_.jpg",
     title: "Adidas Women's 90s Regular",
     star: <AiFillStar className="ratings-start" />,
@@ -57,6 +62,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 6,
     img: "https://m.media-amazon.com/images/I/61kx-PYmWBL._AC_UL400_.jpg",
     title: "Adidas Women's 90s Regular",
     star: <AiFillStar className="ratings-start" />,
@@ -68,6 +74,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 7,
     img: "https://m.media-amazon.com/images/I/6144k0M50TL._AC_UL400_.jpg",
     title: "Adidas Women's Adilette Sandal",
     star: <AiFillStar className="ratings-start" />,
@@ -79,6 +86,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 8,
     img: "https://m.media-amazon.com/images/I/61Ldw7Rxk0L._AC_UL400_.jpg",
     title: "Nike Women's Open Toe",
     star: <AiFillStar className="ratings-start" />,
@@ -90,6 +98,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 9,
     img: "https://m.media-amazon.com/images/I/51gZlfeXzrL._AC_UL400_.jpg",
     title: "Nike Women's Oneanta",
     star: <AiFillStar className="ratings-start" />,
@@ -101,6 +110,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 10,
     img: "https://m.media-amazon.com/images/I/51gZlfeXzrL._AC_UL400_.jpg",
     title: "Nike Vista Sandal Mens Shoes",
     star: <AiFillStar className="ratings-start" />,
@@ -112,6 +122,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 11,
     img: "https://m.media-amazon.com/images/I/61Ldw7Rxk0L._AC_UL400_.jpg",
     title: "Nike Vista Sandal Mens Shoes",
     star: <AiFillStar className="ratings-start" />,
@@ -123,6 +134,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 12,
     img: "https://m.media-amazon.com/images/I/61Ldw7Rxk0L._AC_UL400_.jpg",
     title: "Nike Womens Benassi Duo",
     star: <AiFillStar className="ratings-start" />,
@@ -134,6 +146,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 13,
     img: "https://m.media-amazon.com/images/I/51rA7gZJVsL._AC_UL400_.jpg",
     title: "Nike wmns Offcourt Duo Slide",
     star: <AiFillStar className="ratings-start" />,
@@ -145,6 +158,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 14,
     img: "https://m.media-amazon.com/images/I/715eOE7vdGL._AC_UL400_.jpg",
     title: "Nike Men's Sandal Canyon",
     star: <AiFillStar className="ratings-start" />,
@@ -156,6 +170,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 15,
     img: "https://m.media-amazon.com/images/I/61ZuRYDvnLL._AC_UL400_.jpg",
     title: "Nike Sunray Adjust 5 V2",
     star: <AiFillStar className="ratings-start" />,
@@ -167,6 +182,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 16,
     img: "https://m.media-amazon.com/images/I/61tNTz-gZFL._AC_UL400_.jpg",
     title: "Nike Kids' Sunray Protect",
     star: <AiFillStar className="ratings-start" />,
@@ -178,6 +194,7 @@ const data = [
     category: "sandals",
   },
   {
+    id: 17,
     img: "https://m.media-amazon.com/images/I/61MJogLwiML._AC_UL400_.jpg",
     title: "Adidas Women's Hoops 3.0 Low",
     star: <AiFillStar className="ratings-start" />,
@@ -189,6 +206,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 18,
     img: "https://m.media-amazon.com/images/I/716Inzq-uoL._AC_UL400_.jpg",
     title: "Adidas Originals Women's",
     star: <AiFillStar className="ratings-start" />,
@@ -200,6 +218,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 19,
     img: "https://m.media-amazon.com/images/I/71Psj6b1VTL._AC_UL400_.jpg",
     title: "Adidas Originals Women's NMD_R1",
     star: <AiFillStar className="ratings-start" />,
@@ -211,6 +230,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 20,
     img: "https://m.media-amazon.com/images/I/61bWq-FnjuL._AC_UL400_.jpg",
     title: "Adidas Women's Vulc Raid3r Skate",
     star: <AiFillStar className="ratings-start" />,
@@ -222,6 +242,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 21,
     img: "https://m.media-amazon.com/images/I/71nRAZxGg3L._AC_UL400_.jpg",
     title: "Adidas Women's Gamecourt 2",
     star: <AiFillStar className="ratings-start" />,
@@ -233,6 +254,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 22,
     img: "https://m.media-amazon.com/images/I/61A51uPKGbL._AC_UL400_.jpg",
     title: "Adidas Men's Ultraboost 5.0 DNA",
     star: <AiFillStar className="ratings-start" />,
@@ -244,6 +266,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 23,
     img: "https://m.media-amazon.com/images/I/81A5tRP5VMS._AC_UL400_.jpg",
     title: "Adidas Men's Kaptir 2.0 Running",
     star: <AiFillStar className="ratings-start" />,
@@ -255,6 +278,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 24,
     img: "https://m.media-amazon.com/images/I/71yEpakv8LL._AC_UL800_FMwebp_QL65_.jpg",
     title: "Adidas Women's Ultraboost 5.0",
     star: <AiFillStar className="ratings-start" />,
@@ -266,6 +290,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 25,
     img: "https://m.media-amazon.com/images/I/71n6Y8rMXVL._AC_UL400_.jpg",
     title: "Adidas Women's Puremotion Adapt",
     star: <AiFillStar className="ratings-start" />,
@@ -277,6 +302,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 26,
     img: "https://m.media-amazon.com/images/I/71Psj6b1VTL._AC_UL400_.jpg",
     title: "Adidas Originals Women's NMD_R1",
     star: <AiFillStar className="ratings-start" />,
@@ -288,6 +314,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 27,
     img: "https://m.media-amazon.com/images/I/61bWq-FnjuL._AC_UL400_.jpg",
     title: "Adidas Women's Vulc Raid3r Skate",
     star: <AiFillStar className="ratings-start" />,
@@ -299,6 +326,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 28,
     img: "https://m.media-amazon.com/images/I/71nRAZxGg3L._AC_UL400_.jpg",
     title: "Adidas Women's Gamecourt 2",
     star: <AiFillStar className="ratings-start" />,
@@ -310,6 +338,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 29,
     img: "https://m.media-amazon.com/images/I/61A51uPKGbL._AC_UL400_.jpg",
     title: "Adidas Men's Ultraboost 5.0 DNA",
     star: <AiFillStar className="ratings-start" />,
@@ -321,6 +350,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 30,
     img: "https://m.media-amazon.com/images/I/81A5tRP5VMS._AC_UL400_.jpg",
     title: "Adidas Men's Kaptir 2.0 Running",
     star: <AiFillStar className="ratings-start" />,
@@ -332,6 +362,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 31,
     img: "https://m.media-amazon.com/images/I/71yEpakv8LL._AC_UL800_FMwebp_QL65_.jpg",
     title: "Adidas Women's Ultraboost 5.0",
     star: <AiFillStar className="ratings-start" />,
@@ -343,6 +374,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 32,
     img: "https://m.media-amazon.com/images/I/71n6Y8rMXVL._AC_UL400_.jpg",
     title: "Adidas Women's Puremotion Adapt",
     star: <AiFillStar className="ratings-start" />,
@@ -354,6 +386,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 33,
     img: "https://m.media-amazon.com/images/I/81BrJhy2oTL._AC_UL800_FMwebp_QL65_.jpg",
     title: "Nike Women's Low-Top Track & Field Shoes",
     star: <AiFillStar className="ratings-start" />,
@@ -365,6 +398,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 34,
     img: "https://m.media-amazon.com/images/I/71R2zE31DJL._AC_UL400_.jpg",
     title: "Nike Men's Air Force 1 '07 An20",
     star: <AiFillStar className="ratings-start" />,
@@ -376,6 +410,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 35,
     img: "https://m.media-amazon.com/images/I/716CxmzFJzL._AC_UL400_.jpg",
     title: "Nike Men's Court Vision Mid",
     star: <AiFillStar className="ratings-start" />,
@@ -387,6 +422,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 36,
     img: "https://m.media-amazon.com/images/I/71SPszjMN3L._AC_UL400_.jpg",
     title: "Nike Men's Court Vision Mid",
     star: <AiFillStar className="ratings-start" />,
@@ -398,6 +434,7 @@ const data = [
     category: "flats",
   },
   {
+    id: 37,
     img: "https://m.media-amazon.com/images/I/71I6w07sH7L._AC_UL400_.jpg",
     title: "Nike Men's Court Vision Mid",
     star: <AiFillStar className="ratings-start" />,
@@ -409,6 +446,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 38,
     img: "https://m.media-amazon.com/images/I/51RZOAVJDZL._AC_UL400_.jpg",
     title: "Nike Revolution 6 NN Men's Road",
     star: <AiFillStar className="ratings-start" />,
@@ -420,6 +458,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 39,
     img: "https://m.media-amazon.com/images/I/71BBDcvgL1L._AC_UL400_.jpg",
     title: "Nike Women's Low-Top Trainers",
     star: <AiFillStar className="ratings-start" />,
@@ -431,6 +470,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 40,
     img: "https://m.media-amazon.com/images/I/71BBDcvgL1L._AC_UL400_.jpg",
     title: "Nike Women's Low-Top Trainers",
     star: <AiFillStar className="ratings-start" />,
@@ -442,6 +482,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 41,
     img: "https://m.media-amazon.com/images/I/61r6h4qjPmL._AC_UL400_.jpg",
     title: "Nike Women's Low Sneaker Shoes",
     star: <AiFillStar className="ratings-start" />,
@@ -453,6 +494,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 42,
     img: "https://m.media-amazon.com/images/I/81r5BDuVz2L._AC_UL400_.jpg",
     title: "Nike Women's Low Sneaker Shoes",
     star: <AiFillStar className="ratings-start" />,
@@ -464,6 +506,7 @@ const data = [
     category: "sneakers",
   },
   {
+    id: 43,
     img: "https://m.media-amazon.com/images/I/71QaKXtIrHL._AC_UL400_.jpg",
     title: "Nike Women's Low Sneaker Shoes",
     star: <AiFillStar className="ratings-start" />,
