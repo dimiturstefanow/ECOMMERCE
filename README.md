@@ -3,7 +3,7 @@ ___
 
 
 
-## With this app I have covored my client's requirements:
+## With this project I have covored my client's requirements:
 * Product counter
 * Product Grid
 * Filtering mechanism
