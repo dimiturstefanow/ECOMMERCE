@@ -1,4 +1,4 @@
-## C4 NEXUS - Ecommerce / Fully working Ecommerce Web Application
+## C4 NEXUS - Ecommerce / Fully working Web Application
 ___
 
 
