@@ -21,7 +21,7 @@
 
 ## In order to start and try the application you have to run these commands in the terminal:
 * npm install
-* npm install bootstrap
+
 
 
 ### Screenshots:
