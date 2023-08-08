@@ -1,4 +1,4 @@
-## C4 NEXUS - Ecommerce / Fully Web Application
+## Ecommerce / Fully Web Application
 
 
 
@@ -17,7 +17,7 @@
 * Bootstrap
 
 
-## The idea of this project is to serve the client who is willing to buy something from Ecommerce Application
+## The idea of this project is to serve the client. Who is willing to buy something from Ecommerce Application
 
 ## In order to start and try the application you have to run these commands in the terminal:
 * npm install
