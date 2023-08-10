@@ -95,5 +95,6 @@ console.log(favorites);
     </div>
   );
 }
+// Deployed
 
 export default App;
