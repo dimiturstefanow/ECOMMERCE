@@ -1,17 +1,29 @@
-## C4 NEXUS - Ecommerce 
-___
+## Ecommerce / Fully Web Application
 
-* Fully working Ecommerce Web Application
-* With this app I have covored my client's requirements, some of the major one (Product counter, Product Grid, Filtering mechanism, Sorting mechanism, Product Name and Description, Load More and more)
-___
+
+
+
+## Within this project I have covored my client's requirements:
+* Product counter
+* Product Grid
+* Filtering mechanism
+* Sorting mechanism
+* Product Name Description
+* Load More
+* Add to favorites
 
 ## Technology used:
 * ReactJS
 * Bootstrap
 
-___
-* The idea of this project is to serve the client who is willing to buy something from Ecommerce Application
-___
+
+## The idea of this project is to serve the client. Who is willing to buy something from Ecommerce Application
+
+## In order to start and try the application you have to run these commands in the terminal:
+* npm install
+
+
+
 ### Screenshots:
 
 ![Screenshot_1](https://github.com/dimiturstefanow/Listify/assets/126346506/1aa3a3f5-aa66-43cb-b19c-cca54e106c18)
